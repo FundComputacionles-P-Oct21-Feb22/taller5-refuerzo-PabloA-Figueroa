@@ -1,0 +1,62 @@
+En un comercial de venta de llantas de vehículos de la ciudad de Loja, se hace un descuento del 10% si el cliente tiene pide un juego de llantas 
+para un vehículo tipo "auto", del 20% si el cliente pide un juego de llantas para un vehículo tipo "camioneta", del 30% el cliente pide un juego 
+de llantas para un vehículo tipo "bus". Elaborar un solución que pida como datos de entrada el tipo de vehículo y el valor del juego de llantas y 
+el número de juegos de llantas para el vehículo. Y luego calcule e imprima el subtotal por pagar y el total por pagar.
+
+// Solucion en Algoritmo
+1. Inicio
+3. preguntamos el tipo del vehiculo (b)
+4. Si el cliente tiene un vehiculo (a) tipo "auto" realiza el siguiente descuento 
+5. Se multiplica el valor de las llantas (b) por el descuento (10%) y todo se divide por (100) (c)
+6. Si el clientet tiene un vehiculo (a) tipo "camioneta"  se realiza el siguiente descuento 
+7. Se multiplica el valor de las llantas (b) por el descuento (12%) y todo se divide por (100) (d)
+8. Si el cliente tiene un vehiculo (a) tipo "bus"  se realiza el siguiente descuento
+9. Se multiplica el valor de las llantas (b) por el descuento (20%) y todo se divide por (100) (e)
+10. Presentamos el subtotal a pagar (b) 
+11. Presentamos el total a libro (c), (d) o (e) // se presenta el total dependiento del tipo del vehiculo (a) del cliente 
+12. Fin
+
+// Solucion en miniespecificacion
+13.  Inicio
+
+
+14. datoVehiculo, x(11)[{a,u,t,o},{c,a,m,i,o,n,e,t,a},{b,u,s}, {A,B,C},{BS}]
+15. valorSubtotal, d[0,n]
+16. valorTotal, d[0,n]
+17. descuento, d[0,n]
+18. descuento2,d[0,n]
+19. descuento3,d[0,n]
+20. porcentaje, d[0,n]
+21. porcentaje2, d[0,n]
+22. porcentaje3, d[0,n]
+
+23. porcentaje  <-- 5
+24. porcentaje2 <--12
+25. porcentaje3 <--20
+
+26. Escribir " Ingrese su tipo de vehiculo"
+27. Lea datoVehiculo
+
+28. valorSubtotal<-- datoVehiculo
+29. valorTotal <-- datoVehiculo
+
+30.  Si datoVehiculo = auto || Auto
+31.   descuento <-- (porcentaje * valorTotal)/100
+32.   valorTotal <-- valorTotal - porcentaje // vt <-- 100 - 5 = 95 %
+33.  Fin si
+
+34.  Si datoVehiculo = camioneta || Camioneta
+35.   descuento2 <-- (porcentaje2 * valorTotal)/100
+36.   valorTotal <-- valorTotal - porcentaje2 // vt <-- 100 - 12 = 88 %
+37.  Fin si
+
+38.  Si datoVehiculo = bus || Bus
+39.   descuento3 <-- (porcentaje3 * valorTotal)/100
+40.   valorTotal <-- valorTotal - porcentaje3 // vt <-- 100 - 20 = 80 %
+41.  Fin si
+
+42. Escribir "El valor total a pagar es: " + valorTotal
+43. Escribir "El valor subtotal a pagar es: " + valorSubtotal
+
+44
+. Fin

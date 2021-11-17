@@ -1,0 +1,63 @@
+En una librería de la ciudad de Loja, se hace un descuento del 5% si el cliente tiene una edad mayor a cero y menor 20, 
+del 12% si el cliente tiene una edad mayor o igual a 20 y menor 40 años, del 20% si la edad es mayor o igual a 40 años. 
+Elaborar un solución que pida como datos de entrada la edad del comprador y el valor del libro (un cliente solo pide un libro) 
+y luego calcule e imprima el subtotal por pagar y el total por pagar.
+// Solucion en Algoritmo
+1. Inicio
+2. Preguntamos la edad al cliente (a) 
+3. preguntamos el precio del libro (b)
+4. Si el cliente tiene una edad (a) mayor a cero y menor a 20 se realiza el siguiente descuento 
+5. Se multiplica el valor del libro (b) por el descuento (5%) y todo se divide por (100) (c)
+6. Si el cliente tiene una edad (a) mayor o igual a 20 y menor a 40 años se realiza el siguiente descuento 
+7. Se multiplica el valor del libro (b) por el descuento (12%) y todo se divide por (100) (d)
+8. Si el cliente tiene una edad (a) mayor o igual a 40 años se realiza el siguiente descuento
+9. Se multiplica el valor del libro (b) por el descuento (20%) y todo se divide por (100) (e)
+10. Presentamos el subtotal a pagar (b) 
+11. Presentamos el total a libro (c), (d) o (e) // se presenta el total dependiento de la edad (a) del cliente 
+12. Fin
+
+// Solucion en miniespecificacion
+
+13.  Inicio
+
+14. edad, i[0,n]
+15. precioLibro, d[0,n]
+16. valorSubtotal, d[0,n]
+17. valorTotal, d[0,n]
+18. descuento, d[0,n]
+19. descuento2,d[0,n]
+20. descuento3,d[0,n]
+21. porcentaje, d[0,n]
+22. porcentaje2, d[0,n]
+23. porcentaje3, d[0,n]
+
+24. porcentaje  <-- 5
+25. porcentaje2 <--12
+26. porcentaje3 <--20
+
+27. Escribir " Ingrese su edad"
+28. Lea edad
+29. Escribir "Ingrese el costo del libro"
+30. Lea precioLibro
+31. valorSubtotal<-- precioLibro
+32. valorTotal <-- precioLibro
+
+33.  Si edad > 0 && <20 entonces
+34.   descuento <-- (porcentaje * valorTotal)/100
+35.   valorTotal <-- valorTotal - porcentaje // vt <-- 100 - 5 = 95 %
+36.  Fin si
+
+37.  Si edad >= 20 && < 30 entonces
+38.   descuento2 <-- (porcentaje2 * valorTotal)/100
+39.   valorTotal <-- valorTotal - porcentaje2 // vt <-- 100 - 12 = 88 %
+40.  Fin si
+
+41.  Si edad >= 30 entonces
+42.   descuento3 <-- (porcentaje3 * valorTotal)/100
+43.   valorTotal <-- valorTotal - porcentaje3 // vt <-- 100 - 20 = 80 %
+44.  Fin si
+
+45. Escribir "El valor total a pagar es: " + valorTotal
+46. Escribir "El valor subtotal a pagar es: " + valorSubtotal
+
+47. Fin
